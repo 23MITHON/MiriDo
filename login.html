@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="login-container">
+        <p id="title">로그인</p>
+        <input type="text" id="id" value="아이디를 입력해주세요." onfocus="clearText(this);" onblur="restoreText(this);">
+        <input type="text" id="pw" value="비밀번호를 입력해주세요." onfocus="clearPassword(this);" onblur="restorePassword(this);">
+        <button type="submit" id="login-button"><a href="./index.html">로그인하기</a></button>
+        <p id="sign-in"><a href="./signin.html">회원가입</a></p>
+    </div>
+    <script src="./JS/login.js"></script>
+</body>
+</html>
