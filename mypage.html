@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        .image-container {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/my.css">
 </head>
 <body>
     <script>
@@ -22,10 +14,28 @@
             window.parent.buyItem(itemName, itemPrice);
         }
     </script>
-    <div class="image-container">
-        <img src="img2/mypage.png" alt="이미지 설명">
+
+    <div class="alien-items">
+        <img src="img2/Alien.png" alt="이미지 설명">
     </div>
+    <div class="ufo-items">
+        <img src="img2/UFO.png" alt="이미지 설명" >
+    </div>
+    <div class="telescope-items">
+        <img src="img2/Telescope.png" alt="이미지 설명" >
+    </div>
+    <div class="star-items">
+        <img src="img2/Star.png" alt="이미지 설명" >
+    </div>
+    <div class="rabbit-items">
+        <img src="img2/Rabbit.png" alt="이미지 설명" >
+    </div>
+    <div class="rocket-items">
+        <img src="img2/Rocket.png" alt="이미지 설명" >
+    </div>
+    <p id="home"><a href="./main.html">홈</a></p>
     <script>
+        
         // 저장된 이미지 정보를 로컬 스토리지에서 읽어와 표시
         function displayImages() {
             const images = localStorage.getItem('images');
