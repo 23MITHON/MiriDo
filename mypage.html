@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .image-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 'buyItem' 함수를 부모 창(shop.html)에서 호출할 수 있도록 설정
+        function callParentBuyItem(itemName, itemPrice) {
+            // 부모 창의 'buyItem' 함수 호출
+            window.parent.buyItem(itemName, itemPrice);
+        }
+    </script>
+    <div class="image-container">
+        <img src="img2/mypage.png" alt="이미지 설명">
+    </div>
+    <script>
+        // 저장된 이미지 정보를 로컬 스토리지에서 읽어와 표시
+        function displayImages() {
+            const images = localStorage.getItem('images');
+            if (images) {
+                const imageArray = JSON.parse(images);
+                const imageContainer = document.querySelector('.image-container');
+
+                // 각 이미지를 표시
+                imageArray.forEach(itemName => {
+                    const imageFileName = getImageFileName(itemName);
+                    const newImage = document.createElement('img');
+                    newImage.src = 'img2/' + imageFileName;
+                    newImage.alt = itemName + ' 이미지';
+                    imageContainer.appendChild(newImage);
+                });
+            }
+        }
+
+        displayImages(); // 페이지 로딩 시 이미지 표시
+    </script>
+</body>
+</html>

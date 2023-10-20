@@ -7,77 +7,162 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <header>
-        <img src="./img/back.png">
+        <a href="./main.html"><img src="./img/back.png"></a>
         <p>Shop</p>
     </header>
     <main>
+        
         <hr>
         <div id="total-box">
             <div id="total">Total : </div>
-            <div id="score">✨</div>
+            <div id="score">✨ <span id="total-value">15000</span></div></div>
         </div>
         <div id="shop-list">
             <div id="list-box1" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
+                <img src="./img2/Meteor.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8; ">
                 <p class="list-name">운석</p>
                 <p class="list-price">✨ 600</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="운석" data-item-price="600">BUY</div>
             </div>
             <div id="list-box2" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
-                <p class="list-name">블랙홀</p>
+                <img src="./img2/Star.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8;">
+                <p class="list-name">별</p>
                 <p class="list-price">✨ 750</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="별" data-item-price="750" >BUY</div>
             </div>
         </div>
         <div id="shop-list">
             <div id="list-box1" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
+                <img src="./img2/ShootingStar.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8;">
                 <p class="list-name">별똥별</p>
                 <p class="list-price">✨ 850</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="별똥별" data-item-price="850">BUY</div>
             </div>
             <div id="list-box2" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
+                <img src="./img2/Telescope.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8;">
                 <p class="list-name">망원경</p>
                 <p class="list-price">✨ 900</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="망원경" data-item-price="900">BUY</div>
             </div>
         </div>
         <div id="shop-list">
             <div id="list-box1" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
+                <img src="./img2/Rocket.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8;">
                 <p class="list-name">로켓</p>
                 <p class="list-price">✨ 1500</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="로켓" data-item-price="1500">BUY</div>
             </div>
             <div id="list-box2" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
+                <img src="./img2/UFO.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8;">
                 <p class="list-name">UFO</p>
                 <p class="list-price">✨ 1800</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="UFO" data-item-price="1800">BUY</div>
             </div>
         </div>
         <div id="shop-list">
             <div id="list-box1" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
+                <img src="./img2/Rabbit.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8;">
                 <p class="list-name">달토끼</p>
                 <p class="list-price">✨ 2000</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="달토끼" data-item-price="2000">BUY</div>
             </div>
             <div id="list-box2" class="list-box">
-                <img src="./img/my.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite;">
+                <img src="./img2/Alien.png" style="width: 85px; margin-top: 15px; margin-bottom: 3px; background-color: antiquewhite; border-radius: 10px;
+    opacity: 0.8;">
                 <p class="list-name">외계인</p>
                 <p class="list-price">✨ 2500</p>
-                <div class="buy-button">BUY</div>
+                <div class="buy-button" data-item-name="외계인" data-item-price="2500">BUY</div>
             </div>
         </div>
+        
     </main>
     <footer>
         <a href="./shop.html"><img src="./img/shop.png" id="shop"></a>
         <div id="add">+</div>
         <a href="./my.html"><img src="./img/my.png" id="my"></a>
     </footer>
+    <script>
+        let totalValue = 0;
+
+        // 페이지 로딩 시 score 값을 가져와서 totalValue에 더함
+        window.onload = function() {
+            let scoreValue = document.getElementById('score').textContent;
+            totalValue = parseInt(scoreValue.split(' ')[1]);
+            document.getElementById('total-value').textContent = totalValue;
+        }
+
+        // 'BUY' 버튼을 클릭할 때 실행되는 함수
+        document.querySelectorAll('.buy-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const itemName = this.getAttribute('data-item-name');
+                const itemPrice = parseInt(this.getAttribute('data-item-price'));
+                buyItem(itemName, itemPrice);
+            });
+        });
+
+        function buyItem(itemName, itemPrice) {
+            // 아이템의 가격을 totalValue에서 뺀다.
+            totalValue -= itemPrice;
+
+            // totalValue를 업데이트한다.
+            document.getElementById('total-value').textContent = totalValue;
+        }
+
+        function buyItem(itemName, itemPrice) {
+            // 아이템의 가격을 totalValue에서 뺀다.
+            totalValue -= itemPrice;
+            alert(itemName + "을 구매하였습니다!!");
+            // totalValue를 업데이트한다.
+            document.getElementById('total-value').textContent = totalValue;
+
+            // 이미지 파일 이름 생성
+            const imageFileName = getImageFileName(itemName);
+
+            // 이미지를 특정 요소에 추가
+            saveImageInfo(imageFileName);
+        }
+
+        function getImageFileName(itemName) {
+            // itemName을 기반으로 이미지 파일 이름 생성
+            switch (itemName) {
+                case '운석':
+                    return 'Meteor.png';
+                case '별':
+                    return 'Star.png';
+                case '별똥별':
+                    return 'ShootingStar.png';
+                case '로켓':
+                    return 'Rocket.png';
+                case 'UFO':
+                    return 'UFO.png';
+                case '망원경':
+                    return 'Telescope.png';
+                case '달토끼':
+                    return 'Rabbit.png';
+                case '외계인':
+                    return 'Alien.png';
+                default:
+                    return 'default.png'; // 기본 이미지 파일 이름
+            }
+        }
+        // 이전에 추가된 이미지 정보를 로컬 스토리지에 저장
+        function saveImageInfo(imageName) {
+            const images = localStorage.getItem('images') || '[]';
+            const imageArray = JSON.parse(images);
+            imageArray.push(imageName);
+            localStorage.setItem('images', JSON.stringify(imageArray));
+        }
+
+        
+    </script>
 </body>
 </html>
