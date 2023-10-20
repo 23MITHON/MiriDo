@@ -84,11 +84,9 @@ a {
     /* 다른 스타일 속성도 필요한 경우 여기에 추가하세요 */
 }
 #home {
-    position: relative;
-    width: 100px;
-    height: 80px;
-    top: 86px; /* 원하는 위치로 조정 */
-    left: 325px; /* 원하는 위치로 조정 */
+    position: absolute; /* 이전에 relative로 설정되어 있었음 */
+    top: 92.5%; /* 원하는 위치로 조정, 예를 들어 10px로 조정 */
+    left: 88%; /* 원하는 위치로 조정, 예를 들어 10px로 조정 */
     color: white;
     font-size: 25px;
 }
