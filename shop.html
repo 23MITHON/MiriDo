@@ -17,7 +17,7 @@
         <hr>
         <div id="total-box">
             <div id="total">Total : </div>
-            <div id="score">✨ <span id="total-value">3300</span></div></div>
+            <div id="score">✨ <span id="total-value"></span></div></div>
         </div>
         <div id="shop-list">
             <div id="list-box1" class="list-box">
@@ -90,6 +90,12 @@
         <div id="add">+</div>
         <a href="./mypage.html"><img src="./img/my.png" id="my"></a>
     </footer>
+    <script>
+    // 로컬 스토리지에서 데이터를 가져와서 표시
+    const scoreValue = localStorage.getItem('score');
+    const displayElement = document.getElementById('total-value');
+    displayElement.textContent = scoreValue;
+    </script>
     <script>
         let totalValue = 0;
 
