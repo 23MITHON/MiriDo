@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <p>Y M W</p>
-        <div id="">✨<span id="score">1400</span></div>
+        <p id="formattedDate"></p>
+        <div>✨<span id="score">3000</span></div>
     </header>
     <main>
         <hr>
@@ -58,6 +58,27 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
+
+        function formatYearMonthWeek() {
+            const currentDate = new Date(2023, 9, 1);
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth() + 1;
+            const dayOfWeek = currentDate.getDay();
+
+            currentDate.setDate(1);
+            currentDate.setDate(currentDate.getDate() - 7);
+
+            const weekNumber = Math.floor((dayOfWeek + currentDate.getDate() - 1) / 7) + 1;
+            const formattedDate = `${year}Y ${month}M ${weekNumber-1}W`;
+
+            return formattedDate;
+        }
+
+        const formattedDate = formatYearMonthWeek();
+        const formattedDateElement = document.getElementById('formattedDate');
+        formattedDateElement.textContent = formattedDate;
+
+
         function addTotal(){
             let savedScore = $("#score").text();
             let result = parseInt(savedScore) + 150;
