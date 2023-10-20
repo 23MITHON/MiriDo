@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-container > img {
+    width: 200.2px;
+    height: 133.2px;
+    margin-top: 60%;
+}
+
+#loading-container > p {
+    color: #2B3D6D;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
