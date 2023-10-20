@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    border-bottom: 4px solid #2B3D6D;
+}
+
+#signin-container > input {
+    width: 250px;
+    height: 40px;
+    border: 2px solid #bebebe;
+    background: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #747474;
+}
+
+#signin-button {
+    width: 263px;
+    height: 40px;
+    background: none;
+    background-color: #2B3D6D;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}

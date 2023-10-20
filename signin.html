@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/signin.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="signin-container">
+        <p id="title">회원가입</p>
+        <input type="text" id="nickname" value="사용할 닉네임을 입력해주세요. (두 글자)" maxlength="2" onfocus="clearName(this);" onblur="restoreName(this);">
+        <input type="text" id="id" value="아이디를 입력해주세요." onfocus="clearText(this);" onblur="restoreText(this);">
+        <input type="password" id="pw" placeholder="비밀번호를 입력해주세요." onfocus="clearPasswordPlaceholder(this);" onblur="restorePasswordPlaceholder(this);">
+        <input type="password" id="pw-Check" placeholder="비밀번호를 확인해주세요." onfocus="clearPasswordPlaceholder(this);" onblur="restorePasswordPlaceholder(this);">
+        <div id="signin-button" onclick="checkPasswordMatch()">회원가입하기</div>
+    </div>
+    <script src="./JS/signin.js"></script>
+    <script>
+        function checkPasswordMatch() {
+            var pw = document.getElementById('pw').value;
+            var pwCheck = document.getElementById('pw-Check').value;
+
+            if (pw !== pwCheck) {
+                window.location.href = "./signin.html";
+                alert("비밀번호와 비밀번호 확인이 일치하지 않습니다.");
+            } else {
+                window.location.href = "./login.html";
+            }
+        }
+    </script>
+</body>
+</html>
