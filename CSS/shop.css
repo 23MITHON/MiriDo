@@ -9,7 +9,7 @@ header {
     margin-top: 20px;
 }
 
-header > img {
+header > a > img {
     width: 45px;
     height: 40px;
     margin-left: 15px;
