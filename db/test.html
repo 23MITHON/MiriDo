@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>회원 가입</h2>
+    <form action="../db/signin.php" method="post">
+        <label for="nickname">닉네임:</label>
+        <input type="text" name="nickname" required><br>
+
+        <label for="username">사용자 이름:</label>
+        <input type="text" name="username" required><br>
+
+      
+
+        <label for="password">비밀번호:</label>
+        <input type="password" name="password" required><br>
+
+        <input type="submit" value="가입">
+    </form>
+    <h2>로그인 </h2>
+  <form action="../db/login.php" method="POST">
+          <input
+            type="text"
+            name="username"
+            placeholder="아이디를 입력하세요." />
+          <input
+            type="password"
+            name="password"
+            placeholder="비밀번호를 입력하세요." />
+          <input type="submit" value="로그인" />
+          
+        </form>
+</body>
+</html>
