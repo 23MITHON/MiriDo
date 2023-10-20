@@ -9,7 +9,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: url(../img2/mypage.png);
+    background-image: url(../img2/friend1.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -46,6 +46,7 @@ a {
     height: 80px;
     top: 300px; /* 원하는 위치로 조정 */
     left: 80px; /* 원하는 위치로 조정 */
+    
 }
 .star-items {
     transform: rotate(140deg); 
@@ -54,6 +55,7 @@ a {
     height: 80px;
     top: 40px; /* 원하는 위치로 조정 */
     left: 250px; /* 원하는 위치로 조정 */
+    
 }
 .rabbit-items {
     transform: rotate(10deg); 
@@ -62,6 +64,7 @@ a {
     height: 80px;
     top: 140px; /* 원하는 위치로 조정 */
     left: 10px; /* 원하는 위치로 조정 */
+    
 }
 .rocket-items { 
     position: relative;
@@ -69,6 +72,7 @@ a {
     height: 140px;
     top: 20px; /* 원하는 위치로 조정 */
     left: 199px; /* 원하는 위치로 조정 */
+    
 }
 .alien-items {
     transform: rotate(140deg); 
@@ -77,17 +81,12 @@ a {
     height: 80px;
     top: 100px; /* 원하는 위치로 조정 */
     left: 30px; /* 원하는 위치로 조정 */
+    
 }
 #home {
-    position: relative;
-    width: 100px;
-    height: 80px;
-    top: 86px; /* 원하는 위치로 조정 */
-    left: 325px; /* 원하는 위치로 조정 */
+    position: absolute; /* 이전에 relative로 설정되어 있었음 */
+    top: 92.5%; /* 원하는 위치로 조정, 예를 들어 10px로 조정 */
+    left: 88%; /* 원하는 위치로 조정, 예를 들어 10px로 조정 */
     color: white;
     font-size: 25px;
-}
-
-#home > a {
-    
 }

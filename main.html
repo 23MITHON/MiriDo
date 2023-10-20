@@ -58,6 +58,10 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
+        // 데이터를 로컬 스토리지에 저장
+        const scoreElement = document.getElementById('score');
+        const scoreValue = scoreElement.textContent;
+        localStorage.setItem('score', scoreValue);
 
         function formatYearMonthWeek() {
             const currentDate = new Date(2023, 9, 1);
